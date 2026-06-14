@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Profile</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#F6F3EA;      /* Bone */
+    --text:#111111;    /* Near black */
+    --border:#111111;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"JetBrains Mono", monospace;
+}
+
+.wrapper{
+    width:100vw;
+    height:100vh;
+    padding:1rem;
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    gap:1rem;
+}
+
+/* Header */
+
+.header{
+    border:2px solid var(--border);
+    padding:1rem;
+    text-align:center;
+}
+
+.header h1{
+    font-size:2rem;
+    font-weight:600;
+}
+
+.header p{
+    margin-top:.4rem;
+    font-size:.9rem;
+}
+
+/* Main 3-column area */
+
+.main{
+    display:grid;
+    grid-template-columns:1fr 1.2fr 1fr;
+    gap:1rem;
+    min-height:0;
+}
+
+.panel{
+    border:2px solid var(--border);
+    padding:1rem;
+    overflow:hidden;
+}
+
+.section-title{
+    font-weight:600;
+    margin-bottom:.75rem;
+    padding-bottom:.25rem;
+    border-bottom:1px solid var(--border);
+}
+
+.info-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.82rem;
+}
+
+.info-table td{
+    border:1px solid var(--border);
+    padding:.45rem;
+    vertical-align:top;
+}
+
+p{
+    font-size:.82rem;
+    line-height:1.45;
+}
+
+ul{
+    margin-left:1.25rem;
+    font-size:.82rem;
+}
+
+li{
+    margin-bottom:.35rem;
+}
+
+/* Footer */
+
+.footer{
+    border:2px solid var(--border);
+    padding:1rem;
+    font-size:.82rem;
+}
+
+/* Scale down slightly on smaller screens */
+
+@media (max-width:1200px){
+
+    .header h1{
+        font-size:1.6rem;
+    }
+
+    p,
+    li,
+    .info-table{
+        font-size:.75rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <h1>Tushya Neil Rudr</h1>
+        <p>Student</p>
+    </div>
+
+    <div class="main">
+
+        <!-- Left -->
+
+        <div class="panel">
+
+            <div class="section-title">Personal Information</div>
+
+            <table class="info-table">
+                <tr><td>Age</td><td>18</td></tr>
+                <tr><td>Location</td><td>Bengaluru, India</td></tr>
+                <tr><td>Currently Studying</td><td>B.E Electronics and VLSI Engineering</td></tr>
+            </table>
+
+            <br>
+
+            <div class="section-title">About</div>
+
+            <p>
+                Engineering student who likes to see how things work and how to make them work more efficiently 
+            </p>
+
+        </div>
+
+        <!-- Centre -->
+
+        <div class="panel">
+
+            <div class="section-title">Skills</div>
+
+            <table class="info-table">
+                <tr>
+                    <td>Languages</td>
+                    <td>C, pwsh</td>
+                </tr>
+
+                <tr>
+                    <td>Soft Skills</td>
+                    <td>Communication</td>
+                </tr>
+
+                <tr>
+                    <td>Tools</td>
+                    <td>Linux, edit.exe</td>
+                </tr>
+
+                <tr>
+                    <td>Other</td>
+                    <td>Teamwork</td>
+                </tr>
+            </table>
+
+            <br>
+                        <div class="section-title"></div>
+
+            <ul>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Right -->
+
+        <div class="panel">
+
+            <div class="section-title">Contact</div>
+
+            <table class="info-table">
+                <tr><td>Email</td><td>rudtush@gmail.com.com</td></tr>
+                <tr><td>Phone</td><td>+91 6364764530</td></tr>
+                <tr><td>Website</td><td>https://github.com/Thermispro</td></tr>
+                <tr><td>LinkedIn</td><td>/https://www.linkedin.com/in/tushya-neil-rudr-0300743a2/</td></tr>
+            </table>
+
+            <br>
+
+            <div class="section-title">Interests</div>
+
+            <ul>
+                <li>Technology</li>
+                <li>Design</li>
+                <li>Photography</li>
+                <li>Vehicles</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+Please contact for more information.
+    </div>
+
+</div>
+
+</body>
+</html>
